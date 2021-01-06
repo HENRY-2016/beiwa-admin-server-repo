@@ -35,24 +35,35 @@
 }
  */
 
- .main_body { background-color:#3CB371}
 
-
-.text-slider-items { 
-    display: none; 
+ .body { background-color:#F5F5F5}
+/* #3CB371 */
+#main-body
+{
+    height: 100%;
+    /* background-color: red; */
+}
+.info-labels 
+{ 
+    padding: 8px 8px 8px 8px; 
+    font-size: 18px;
+    color:blue;
+    font-family:Times New Roman Times, serif;
 } 
 
-.heading { 
-    margin-top: 200px; 
-    text-align: center; 
-} 
+.type-writer-area
+{
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    color:blue;
+    padding: 10px 10px 10px 10px; 
+    /* font-style: italic; */
+    font-size: 18px;
+    font-family:Times New Roman Times, serif;
+}
 
-.heading h1 { 
-    color: limegreen; 
-    font-size: 70px; 
-} 
-
-.heading h3 { 
-    color: black; 
-    font-size: 20px; 
-} 
+#contacts-footer
+{
+    margin-bottom: -10px;
+}

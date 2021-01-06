@@ -1,5 +1,14 @@
 
 
+let bioinfoarray = ["Bio digester is a modern on site sewer system As feacal matter comes from the toilet is digested by aerobic and anaerobic reactions.The end product is water which is soaked away.Bio tank is made out of water proofed and reinforced concrete.",
+
+"Bio tank comes with grease filter for filtering water from the batheroom and the kicthen.",
+"Bio tank comes in different sizes ranging from domestic to institutional.",
+"1-30 users",
+"1-100 users",
+"1-200 users" ]
+
+
 let whybioarray = ["1 There is no to evacuate the bio digester as opposed to the conventional septic tank which must be evacuted at frequent intervals.",
 "2 Bio tank requires no maintaince.",
 "3 It takes small spae.",
@@ -17,17 +26,32 @@ let whybioarray = ["1 There is no to evacuate the bio digester as opposed to the
 "15 A bio digester is a recommendable even in the wetland compared to the conventional septic tank.",]
  
 
-if ($(".text-slider").length == 1) 
-{ 
-              
-    // var typed_strings =  
-    //     $(".text-slider-items").text(); 
+function StartTypingBioInfoText ()
+{
+    if ($(".bio-info-text-slider").length == 1) 
+    { 
+                
+        let typed = new Typed(".bio-info-text-slider", { 
+            strings:bioinfoarray,
+            typeSpeed: 50, 
+            loop: true, 
+            backDelay: 900, 
+            backSpeed: 30, 
+        }); 
+    }
+} 
 
-    let typed = new Typed(".text-slider", { 
-        strings:whybioarray,
-        typeSpeed: 50, 
-        loop: true, 
-        backDelay: 900, 
-        backSpeed: 30, 
-    }); 
+function StartTypingReasonsText ()
+{
+    if ($(".text-slider").length == 1) 
+    { 
+                
+        let typed = new Typed(".text-slider", { 
+            strings:whybioarray,
+            typeSpeed: 50, 
+            loop: true, 
+            backDelay: 900, 
+            backSpeed: 30, 
+        }); 
+    }
 } 
