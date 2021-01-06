@@ -54,16 +54,94 @@
 .type-writer-area
 {
     background-color: white;
-    border-style: solid;
-    border-color: black;
     color:blue;
     padding: 10px 10px 10px 10px; 
-    /* font-style: italic; */
     font-size: 18px;
     font-family:Times New Roman Times, serif;
+}
+.title-labels
+{
+    color:#008000;
+    padding: 10px 10px 10px 10px; 
+    font-size: 18px;
+    font-style: bold;
+    font-family:Times New Roman Times, serif;
+    
 }
 
 #contacts-footer
 {
     margin-bottom: -10px;
 }
+
+
+/*=======================================================================================================*/
+                                            /*
+                                               +++++++++++++++++++++++++ ++
+                                               +                          +
+                                               +   NAVIGETION            +
+                                               +                          +
+                                               ++++++++++++++++++++++++++++
+                                               */
+
+#menu-items-div
+{
+    background-color:#a21369;
+    border-radius: 10px;
+}
+
+#NaviDiv
+{
+    background-color:white;
+    height:50px;
+}
+                                               
+
+#alert-box-display-area{
+    display: none;
+    opacity: .8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #FFF;
+    width: 100%;
+    z-index: 10;
+    /* border-radius: 50px; */
+}
+#alert-box{
+    display: none;
+    position: fixed;
+    /* background: beige; */
+    /* border-radius:50px;  */
+    width:550px;
+    z-index: 10;
+}
+#alert-box > div{margin:8px; }
+#alert-box > div > #alert-box-header
+{ 
+    background:#6495ED;  font-size:19px; padding:10px; color:white; 
+    border-top-left-radius: 30px; border-top-right-radius: 30px; align-content: center;
+    font-family:Times New Roman Times, serif; font-weight: bold; font-style: italic;
+}
+.ok-alert-btn
+{
+    background:  #F5F5F5;
+    border-radius: 30px;
+    width: 50%; height: 35px; color: #0000CD; font-size: 18px;
+    font-family:Times New Roman Times, serif; font-weight: bold; font-style: italic;
+}
+#alert-box > div > #alert-box-body
+{ 
+    background:#E6E6FA; padding:20px; 
+    height: 150px; color:#0000CD ; font-size: 16px;
+    font-family:Times New Roman Times, serif; font-weight: bold; font-style: italic;
+}
+#alert-box > div > #alert-box-footer
+    { 
+        background:#6495ED; 
+        padding:10px; 
+        text-align:center; 
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        height: 45px; 
+    }
